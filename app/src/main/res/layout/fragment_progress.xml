@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/drawer_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <RelativeLayout
+            android:id="@+id/rl_top"
+            android:background="#f2f2f2"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/y130">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="我的任务"
+                android:textColor="#000"
+                android:textSize="@dimen/x50" />
+        </RelativeLayout>
+        <LinearLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/y130"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_marginLeft="@dimen/x20"
+                android:id="@+id/tv_one"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="媒体规格" />
+
+            <TextView
+                android:id="@+id/tv_two"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="城市" />
+
+            <TextView
+                android:id="@+id/tv_three"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="活动名称" />
+
+            <TextView
+                android:id="@+id/tv_final"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="筛选" />
+        </LinearLayout>
+
+        <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <com.chanven.lib.cptr.PtrClassicFrameLayout xmlns:cube_ptr="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/rotate_header_list_view_frame"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                cube_ptr:ptr_duration_to_close="200"
+                cube_ptr:ptr_duration_to_close_header="1000"
+                cube_ptr:ptr_keep_header_when_refresh="true"
+                cube_ptr:ptr_pull_to_fresh="false"
+                cube_ptr:ptr_ratio_of_header_height_to_refresh="1.2"
+                cube_ptr:ptr_resistance="1.7">
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/rv_lixi"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="@dimen/x50"
+                    android:layout_marginRight="@dimen/x50" />
+            </com.chanven.lib.cptr.PtrClassicFrameLayout>
+        </RelativeLayout>
+    </LinearLayout>
+    <!-- -->
+
+    <RelativeLayout
+        android:id="@+id/main_right_drawer_layout"
+        android:layout_width="@dimen/y980"
+        android:layout_height="match_parent"
+        android:layout_gravity="end"
+        android:background="#fff">
+
+        <TextView
+            android:id="@+id/tv_meiti"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/x40"
+            android:text="媒体规格"
+            android:textColor="#000"
+            android:textSize="@dimen/x50" />
+
+        <GridView
+            android:id="@+id/gv_meiti"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_meiti"
+            android:numColumns="3" />
+
+        <TextView
+            android:id="@+id/tv_city"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/gv_meiti"
+            android:layout_margin="@dimen/x40"
+            android:text="城市"
+            android:textColor="#000"
+            android:textSize="@dimen/x50" />
+
+        <TextView
+            android:id="@+id/tv_city_sure"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_city"
+            android:layout_marginLeft="@dimen/x40"
+            android:text="上海"
+            android:textColor="#0073ff"
+            android:textSize="@dimen/x50" />
+
+        <TextView
+            android:id="@+id/tv_active"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_city_sure"
+            android:layout_margin="@dimen/x40"
+            android:text="活动名称"
+            android:textColor="#000"
+            android:textSize="@dimen/x50" />
+
+        <ListView
+            android:id="@+id/lv_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_active" />
+
+        <TextView
+            android:id="@+id/tv_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/lv_name"
+            android:layout_margin="@dimen/x40"
+            android:text="投放时间"
+            android:textColor="#000"
+            android:textSize="@dimen/x50" />
+
+        <LinearLayout
+            android:id="@+id/ll"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/y100"
+            android:layout_below="@id/tv_time"
+            android:orientation="horizontal">
+
+            <EditText
+                android:layout_width="@dimen/x400"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="@dimen/x40"
+                android:background="@null"
+                android:hint="输入开始时间" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/x50"
+                android:text="—"/>
+            <EditText
+                android:layout_width="@dimen/x400"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="@dimen/x40"
+                android:background="@null"
+                android:hint="输入结束时间" />
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_alignParentBottom="true"
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:layout_height="@dimen/y130">
+            <Button
+                android:id="@+id/bt_one"
+                android:layout_width="0dp"
+                android:text="重置"
+                android:background="#fff"
+                android:layout_height="match_parent"
+                android:layout_weight="1"/>
+            <Button
+                android:id="@+id/bt_two"
+                android:text="确定"
+                android:layout_width="0dp"
+                android:background="#e42276"
+                android:layout_height="match_parent"
+                android:layout_weight="1"/>
+        </LinearLayout>
+    </RelativeLayout>
+
+</android.support.v4.widget.DrawerLayout>

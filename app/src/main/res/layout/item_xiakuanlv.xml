@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/y290"
+    android:descendantFocusability="blocksDescendants"
+    android:minHeight="@dimen/y290">
+
+    <ImageView
+        android:id="@+id/item_pic"
+        android:layout_width="@dimen/x110"
+        android:layout_height="@dimen/y110"
+
+        android:layout_marginTop="@dimen/y35"
+        android:background="@drawable/ic_logo" />
+
+    <TextView
+        android:id="@+id/item_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/x21"
+        android:layout_marginTop="@dimen/x33"
+        android:layout_toRightOf="@id/item_pic"
+        android:text="百度有钱花"
+        android:textColor="#000"
+        android:textSize="@dimen/x48" />
+    <ImageView
+        android:id="@+id/item_fenlei"
+        android:layout_marginLeft="@dimen/x13"
+        android:layout_marginTop="@dimen/x40"
+        android:layout_toRightOf="@id/item_title"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/y49" />
+    <TextView
+        android:id="@+id/item_tv"
+        android:layout_marginTop="@dimen/x104"
+        android:layout_toRightOf="@id/item_pic"
+        android:layout_marginLeft="@dimen/x24"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/x36"
+        android:text="百度有钱花百度有钱"
+        android:textColor="#A2A2A2"/>
+    <TextView
+        android:visibility="gone"
+        android:id="@+id/item_tv_money"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/x36"
+        android:text="2000-3000万"
+        android:layout_marginTop="@dimen/x166"
+        android:layout_marginLeft="@dimen/x219"
+        android:textColor="#FF7070"/>
+    <TextView
+        android:visibility="gone"
+        android:id="@+id/item_tv_date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/x36"
+        android:text="3-24个月"
+        android:layout_marginTop="@dimen/x166"
+        android:layout_marginLeft="@dimen/x618"
+        android:textColor="#FF7070"/>
+    <TextView
+        android:id="@+id/item_edu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#A2A2A2"
+        android:visibility="gone"
+        android:text="额度"
+        android:layout_marginLeft="@dimen/x269"
+        android:layout_marginTop="@dimen/x215"
+        android:textSize="@dimen/x36"/>
+    <TextView
+        android:visibility="gone"
+        android:id="@+id/item_qixian"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#A2A2A2"
+        android:text="期限"
+        android:layout_marginLeft="@dimen/x644"
+        android:layout_marginTop="@dimen/x215"
+        android:textSize="@dimen/x36"/>
+    <TextView
+        android:visibility="gone"
+        android:id="@+id/item_tv_person"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="@dimen/x39"
+        android:layout_marginRight="@dimen/x70"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#666"
+        android:text="今日已有2000人申请"
+        android:textSize="@dimen/x26"/>
+    <Button
+        android:visibility="gone"
+        android:id="@+id/item_button"
+        android:layout_marginTop="@dimen/x93"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="@dimen/x50"
+        android:text="申请"
+        android:textColor="#fff"
+        android:background="@drawable/bluebuttton"
+        android:layout_width="@dimen/x225"
+        android:layout_height="@dimen/y67" />
+    <View
+        android:id="@+id/view"
+        android:layout_width="@dimen/x961"
+        android:layout_height="@dimen/y3"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        android:background="#E9E9E9" />
+</RelativeLayout>

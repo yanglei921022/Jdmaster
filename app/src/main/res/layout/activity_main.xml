@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFF"
+    android:fitsSystemWindows="true"
+    android:clipChildren="false">
+
+    <FrameLayout
+        android:id="@+id/fl_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/ll_main_tab" />
+
+    <LinearLayout
+        android:id="@+id/ll_main_tab"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/y170"
+        android:layout_alignParentBottom="true"
+        android:background="#FFFFFF"
+        android:orientation="horizontal">
+
+        <FrameLayout
+            android:id="@+id/fl_home"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <ImageView
+                android:layout_width="@dimen/x61"
+                android:layout_height="@dimen/y61"
+                android:layout_gravity="center|top"
+                android:layout_marginTop="@dimen/y30"
+                android:src="@drawable/selector_tab_home" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom|center"
+                android:layout_marginBottom="@dimen/x20"
+                android:layout_marginTop="@dimen/y10"
+                android:gravity="center"
+                android:text="我的任务"
+                android:textColor="@color/color_home"
+                android:textSize="@dimen/x30" />
+        </FrameLayout>
+        <FrameLayout
+            android:id="@+id/fl_zixun"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <ImageView
+                android:layout_width="@dimen/x61"
+                android:layout_height="@dimen/y61"
+                android:layout_gravity="center|top"
+                android:layout_marginTop="@dimen/y30"
+                android:src="@drawable/selector_tab_zixun" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom|center"
+                android:layout_marginBottom="@dimen/x20"
+                android:layout_marginTop="@dimen/y10"
+                android:gravity="center"
+                android:text="清单"
+                android:textColor="@color/color_home"
+                android:textSize="@dimen/x30" />
+        </FrameLayout>
+
+        <FrameLayout
+            android:id="@+id/fl_kefu"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <ImageView
+                android:id="@+id/iv_kefu"
+                android:layout_width="@dimen/x71"
+                android:layout_height="@dimen/y71"
+
+                android:layout_gravity="center|top"
+                android:layout_marginTop="@dimen/y30"
+                android:src="@drawable/selector_tab_kefu" />
+
+            <TextView
+                android:id="@+id/tv_kefu"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom|center"
+                android:layout_marginBottom="@dimen/x20"
+                android:layout_marginTop="@dimen/y10"
+                android:gravity="center"
+                android:text="进度"
+                android:textColor="@color/color_home"
+                android:textSize="@dimen/x30" />
+        </FrameLayout>
+
+        <!--   <FrameLayout
+               android:id="@+id/fl_chaoshi"
+               android:layout_width="0dp"
+               android:layout_height="match_parent"
+               android:layout_weight="1">
+
+               <ImageView
+                   android:layout_width="@dimen/x61"
+                   android:layout_height="@dimen/y61"
+                   android:layout_gravity="center|top"
+                   android:layout_marginTop="@dimen/y30"
+                   android:src="@drawable/selector_tab_chaoshi" />
+
+               <TextView
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:layout_gravity="bottom|center"
+                   android:layout_marginBottom="@dimen/x20"
+                   android:layout_marginTop="@dimen/y10"
+                   android:gravity="center"
+                   android:text="超市"
+                   android:textColor="@color/color_home"
+                   android:textSize="@dimen/x30" />
+           </FrameLayout>-->
+
+
+        <FrameLayout
+            android:id="@+id/fl_my"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <ImageView
+                android:layout_width="@dimen/x61"
+                android:layout_height="@dimen/y61"
+                android:layout_gravity="center|top"
+                android:layout_marginTop="@dimen/y30"
+                android:src="@drawable/selector_tab_my" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom|center"
+                android:layout_marginBottom="@dimen/x20"
+                android:layout_marginTop="@dimen/y10"
+                android:gravity="center"
+                android:text="我的"
+                android:textColor="@color/color_home"
+                android:textSize="@dimen/x30" />
+        </FrameLayout>
+    </LinearLayout>
+</RelativeLayout>

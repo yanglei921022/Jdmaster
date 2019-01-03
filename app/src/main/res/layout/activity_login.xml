@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f2f2f2"
+    tools:context=".LoginActivity">
+
+    <ImageView
+        android:id="@+id/iv"
+        android:layout_width="@dimen/x350"
+        android:layout_height="@dimen/y350"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/y300"
+        android:background="@drawable/ic_launcher" />
+
+    <EditText
+        android:id="@+id/et_count"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/y150"
+        android:layout_below="@id/iv"
+        android:layout_margin="@dimen/x20"
+        android:layout_marginTop="@dimen/y40"
+        android:background="@null"
+        android:hint="请输入账号"
+        android:paddingStart="@dimen/x40"
+        android:textColor="#000"
+        android:textSize="@dimen/x40"
+        tools:ignore="RtlCompat" />
+
+    <EditText
+        android:id="@+id/et_pwd"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/y150"
+        android:layout_below="@id/et_count"
+        android:layout_margin="@dimen/x20"
+        android:layout_marginTop="@dimen/y40"
+        android:background="@null"
+        android:hint="请输入密码"
+        android:paddingStart="@dimen/x40"
+        android:textColor="#000"
+        android:textSize="@dimen/x40"
+        tools:ignore="RtlCompat" />
+
+    <CheckBox
+        android:id="@+id/checkbox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/et_pwd"
+        android:text="自动登录" />
+    <Button
+        android:id="@+id/bt_login"
+        android:layout_centerHorizontal="true"
+        android:layout_width="@dimen/x900"
+        android:layout_height="@dimen/y120"
+        android:layout_below="@id/checkbox"
+        android:text="登录"
+        android:layout_marginTop="@dimen/x40"
+        android:textColor="#fff"
+        android:textSize="@dimen/x40"
+        android:background="#f900bbff"/>
+</RelativeLayout>
